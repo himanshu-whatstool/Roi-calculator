@@ -1,10 +1,10 @@
 import './App.css'
+import Calculator from './components/Calculator'
 
 function App() {
-
   return (
     <>
-      <p>ROI calculator</p>
+      <Calculator />
     </>
   )
 }
