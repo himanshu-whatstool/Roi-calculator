@@ -110,8 +110,8 @@ function Calculator() {
                 <span>10</span>
                 <span style={{ marginLeft: '7%' }}>15</span>
                 <span style={{ marginLeft: '7%' }}>20</span>
-                <span style={{ marginLeft: '7%' }}>25</span>
                 <span style={{ marginLeft: '7%' }}>30</span>
+                <span style={{ marginLeft: '7%' }}>25</span>
                 <span style={{ marginLeft: '7%' }}>35</span>
                 <span style={{ marginLeft: '7%' }}>40</span>
                 <span style={{ marginLeft: '7%' }}>45</span>
@@ -123,7 +123,7 @@ function Calculator() {
               </div>
               <div>
                 <p className='fw-bold' style={{ fontSize: '19px' }}>Projected Savings at 60% touchless processing with Cherrywork AP Automation: <span className='text-success'>${calculateROI()}</span> </p>
-                <p className='fw-bold pt-2' style={{ fontSize: '19px' }}>Projected ROI at 60% touchless processing with Cherrywork AP Automation: <span>{(calculateROI() * 100 / salaryInput).toFixed(2)}%</span></p>
+                <p className='fw-bold pt-2' style={{ fontSize: '19px' }}>Projected ROI at 60% touchless processing with Cherrywork AP Automation: <span> {Math.floor(calculateROI() * 100 / salaryInput)} %</span></p>
               </div>
             </section>
           </Col>
